@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: darkred;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#main{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+}
+#header{
+    background-color:lightgray;
+    border-radius: .25rem;
+    padding: 2rem 1 rem;
+    margin-bottom: 2rem;
+}
+#header img{
+    float: right;
+}
+#header h1{
+    font-weight: 600;
+    color: darkgreen;
+    font-size: 3.5rem;
+}
+
+#Contact-button{
+    border: none;
+    background-color: darkgreen;
+    border-color: darkgreen;
+    padding: .5rem .75rem;
+    border-radius: 25rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    border: 1px solid darkgreen;
+    border-radius: .25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: .75rem;
+}
+
