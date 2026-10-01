@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href="Styles/Pizza-styles.css"
+    <link rel = "stylesheet" href="Styles/Pizza-styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,79 @@
 <body>
     <div id = "main">
         <div id="header">
-        <h1>Welcome to Papi's Pizza</h1>
-        <h2>Thank you for coming by!!</h2>
+            <img src="Images/pizza-guy.jpg">
+            <h1> Welcome to Papi's Pizza </h1>
+            <h2>Serving GRC students for 50 years!!</h2>
+            <hr>
+            <p>We make the best pizza ever. Vist us today</p>
+            <a id = "Contact-button" href= "#" role = "button"> Contact Us</a>
         </div>
+
+        <form id="pizza-form" action="#" method="get">
+            <!--Contact Info-->
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for ="fname">First Name: </label>
+                <input type = "text" id= "fname" name= "fname">
+                <label for="lname">Last Name: </label>
+                <input type ="text" id="lname" name="lname">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <!--Selecting Pizza Topping-->
+                    <legend>Select Toppings</legend>
+                    <label for = "Pepperoni">
+                     <input type ="checkbox" id="pepperoni"
+                        name="toppings[]" value="pepperoni">
+                    Pepperoni
+                    </label>
+                    <label for = "Mushrooms">
+                     <input type ="checkbox" id="mushrooms"
+                        name="toppings[]" value="mushrooms">
+                    Mushrooms
+                    </label>
+                    <label for = "Olives">
+                     <input type ="checkbox" id="olives"
+                        name="toppings[]" value="olives">
+                    Olives
+                    </label>
+                    <label for = "Artichokes">
+                        <input type ="checkbox" id="artichokes"
+                           name="toppings[]" value="artichokes">
+                       Artichokes
+                       </label>
+            </fieldset>
+
+            <fieldset>
+                <!--Selecting Pizza Size-->
+                <legend> Select Pizza Size</legend>
+                <select id = "size" name="size">
+                    <option value="none">--Select a Size--</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </fieldset>
+
+            <!--Comment Field -->
+            <label for ="comment">Comments</label>
+            <textarea rows="5" id="comment" name="comment"></textarea>
+
+            <!--Order Button-->
+            <button type= "submit" id ="order-button"> Place Order</button>
+            <fieldset>
+                <legend> Select Pickup or Delivery</legend>
+                <lable for="pickup">
+                    <input type="radio" id="pickup" name="method" value="pickup">
+                    Pickup
+                </lable>
+                <lable for="delivery">
+                    <input type="radio" id="delivery" name="method" value="delivery">
+                    Delivery
+                </lable>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
