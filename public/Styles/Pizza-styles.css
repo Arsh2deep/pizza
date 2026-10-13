@@ -72,3 +72,8 @@ label{
 textarea{
     resize: .5px;
 }
+
+.err{
+    color: red;
+    display: none;
+}

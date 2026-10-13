@@ -8,6 +8,9 @@
     <title>Papi's Pizza!</title>
     <!--  -->
     <link rel ="icon" href="Images/pizzaicon.jpeg">
+
+    <!--JavaScript-->
+    <script src = "scripts/pizza.js" defer></script>
 </head>
 <body>
     <div id = "main">
@@ -19,17 +22,21 @@
             <p>We make the best pizza ever. Vist us today</p>
             <a id = "Contact-button" href= "#" role = "button"> Contact Us</a>
         </div>
-
         <form id="pizza-form" action="#" method="get">
+
             <!--Contact Info-->
             <fieldset>
                 <legend>Contact Info</legend>
                 <label for ="fname">First Name: </label>
                 <input type = "text" id= "fname" name= "fname">
+                <span class ="err" id="err-fname">Please Enter First Name!</span>
                 <label for="lname">Last Name: </label>
                 <input type ="text" id="lname" name="lname">
+                <span class ="err" id="err-lname">Please Enter Last Name!</span>
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
+                <span class ="err" id="err-email">Please Enter Email!</span>
+
             </fieldset>
             <fieldset>
                 <!--Selecting Pizza Topping-->
@@ -81,7 +88,6 @@
                 </lable>
                 <lable for="delivery">
                     <input type="radio" id="delivery" name="method" value="delivery">
-                    Delivery
                 </lable>
             </fieldset>
         </form>
