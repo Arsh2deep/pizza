@@ -47,7 +47,7 @@ document.getElementById("pizza-form").onsubmit = () => {
     // do not submit the form if data is in-valid
     return isValid;
     
-};
+}
 
 function clearErrors(){
     let errors = document.getElementsByClassName("error");

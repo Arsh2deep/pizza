@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papi's Pizza!</title>
-    <!--  -->
+    <!--StyleSheet-->
     <link rel ="icon" href="Images/pizzaicon.jpeg">
 
     <!--JavaScript-->
@@ -20,9 +20,9 @@
             <h2>Serving GRC students for 50 years!!</h2>
             <hr>
             <p>We make the best pizza ever. Vist us today</p>
-            <a id = "Contact-button" href= "#" role = "button"> Contact Us</a>
+            <a id = "Contact-button" href= "/contact-us" role = "button"> Contact Us</a>
         </div>
-        <form id="pizza-form" action="#" method="get">
+        <form id="pizza-form" action="/submit-order" method="post">
 
             <!--Contact Info-->
             <fieldset>
@@ -36,8 +36,23 @@
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
                 <span class ="err" id="err-email">Please Enter Email!</span>
-
             </fieldset>
+
+            <!--Pickup or Delivery-->
+            <fieldset>
+                <legend> Select Pickup or Delivery</legend>
+                <span class = "err" id="err-method">Select pickup or delivery</span>
+
+                <lable for="pickup">
+                    <input type="radio" id="pickup" name="method" value="pickup">
+                    Pickup
+                </lable>
+                <lable for="delivery">
+                    <input type="radio" id="delivery" name="method" value="delivery">
+                    Delivery
+                </lable>
+            </fieldset>
+
             <fieldset>
                 <!--Selecting Pizza Topping-->
                     <legend>Select Toppings</legend>
@@ -79,19 +94,7 @@
             <textarea rows="5" id="comment" name="comment"></textarea>
 
             <!--Order Button-->
-            <button type= "submit" id ="order-button"> Place Order</button>
-            <fieldset>
-                <legend> Select Pickup or Delivery</legend>
-                <span class = "err" id="err-method">Select pickup or delivery</span>
-                
-                <lable for="pickup">
-                    <input type="radio" id="pickup" name="method" value="pickup">
-                    Pickup
-                </lable>
-                <lable for="delivery">
-                    <input type="radio" id="delivery" name="method" value="delivery">
-                </lable>
-            </fieldset>
+            <button type="submit" id = "order-button">Place Order</button>
         </form>
     </div>
 </body>
