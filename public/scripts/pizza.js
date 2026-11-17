@@ -42,8 +42,6 @@ document.getElementById("pizza-form").onsubmit = () => {
         document.getElementById("err-size").style.display = "block";
         isValid = false;
     }   
-
-
     // do not submit the form if data is in-valid
     return isValid;
     
